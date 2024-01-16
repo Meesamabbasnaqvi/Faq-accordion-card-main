@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <main class="d-flex">
+    <div class="image-box">
+      <img class="women-img" src="images\illustration-woman-online-desktop.svg" alt="">
+      <img class="img" src="images\illustration-box-desktop.svg" alt="">
+    </div>
+    <div class="questions">
+      <h2>
+        FAQ
+      </h2>
+      <div id="arrow-img" class="arrow-img">
+        <h6>
+          How many team members can I invite?
+        </h6>
+        <img id="rotate-img" src="images\icon-arrow-down.svg" alt="">
+      </div>
+      <div class="bg">
+        <p id="show-ans">
+          You can invite up to 2 additional users  on the Free plan. There is no limit on
+          team members for the Premium plan.
+        </p>
+      </div>
+      <div id="arrow-img1" class="arrow-img">
+        <h6>
+          What is the maximum file upload size?
+        </h6>
+        <img id="rotate-img1" src="images\icon-arrow-down.svg" alt="">
+      </div>
+      <p  id="show-ans1">
+        No more than 2GB. All files in your account must fit your allotted storage space.
+      </p>
+      <div id="arrow-img2" class="arrow-img">
+        <h6>
+          How do I reset my password?
+        </h6>
+        <img id="rotate-img2" src="images\icon-arrow-down.svg" alt="">
+      </div>
+      <p id="show-ans2">
+        Click “Forgot password” from the login page or “Change password” from your profile page.
+        A reset link will be emailed to you.
+      </p>
+      <div id="arrow-img3" class="arrow-img">
+        <h6>
+          Can I cancel my subscription?
+        </h6>
+        <img id="rotate-img3" src="images\icon-arrow-down.svg" alt="">
+      </div>
+      <p id="show-ans3">
+        Yes! Send us a message and we’ll process your request no questions asked.
+      </p>
+      <div id="arrow-img4"  class="arrow-img">
+        <h6>
+          Do you provide additional support?
+        </h6>
+        <img id="rotate-img4" src="images\icon-arrow-down.svg" alt="">
+      </div>
+      <p id="show-ans4">
+        Chat and email support is available 24/7. Phone lines are open during normal business hours.
+      </p>
+    </div>
+  </main>
+  <script>
+    const showAnswer = document.getElementById("show-ans")
+    const showAnswer1 = document.getElementById("show-ans1")
+    const showAnswer2 = document.getElementById("show-ans2")
+    const showAnswer3 = document.getElementById("show-ans3")
+    const showAnswer4 = document.getElementById("show-ans4")
+
+
+    const arrowImg = document.getElementById("arrow-img")
+    const arrowImg1 = document.getElementById("arrow-img1")
+    const arrowImg2 = document.getElementById("arrow-img2")
+    const arrowImg3 = document.getElementById("arrow-img3")
+    const arrowImg4 = document.getElementById("arrow-img4")
+
+
+    let rotateImg = document.getElementById("rotate-img")
+    let rotateImg1 = document.getElementById("rotate-img1")
+    let rotateImg2 = document.getElementById("rotate-img2")
+    let rotateImg3 = document.getElementById("rotate-img3")
+    let rotateImg4 = document.getElementById("rotate-img4")
+
+
+    arrowImg.addEventListener("click", () => {
+      showAnswer.classList.toggle("show")
+      rotateImg.classList.toggle("rotate-img")
+    })
+
+    arrowImg1.addEventListener("click", () => {
+      showAnswer1.classList.toggle("show")
+      rotateImg1.classList.toggle("rotate-img")
+    })
+
+    arrowImg2.addEventListener("click", () => {
+      showAnswer2.classList.toggle("show")
+      rotateImg2.classList.toggle("rotate-img")
+    })
+
+    arrowImg3.addEventListener("click", () => {
+      showAnswer3.classList.toggle("show")
+      rotateImg3.classList.toggle("rotate-img")
+    })
+
+    arrowImg4.addEventListener("click", () => {
+      showAnswer4.classList.toggle("show")
+      rotateImg4.classList.toggle("rotate-img")
+    })
+    
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    background: #fff;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-size: 500px;
+    background-position-y: -80px;
+    background-position-x: -210px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    color: hsl(238, 29%, 16%);
+    box-shadow: 1px 5px 20px black;
+    padding: 20px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.women-img {
+    margin-right: 30px;
+    width: 300px;
+}
+
+.image-box {
+    position: relative;
+    margin-left: -40px;
+}
+
+.img {
+    position: absolute;
+    bottom: 20px;
+    left: -50px;
+}
+
+.questions {
+    width: 350px;
+    padding: 0px;
+
+}
+
+h6:hover {
+    color: hsl(14, 88%, 65%);
+    transition: 0.2s;
+}
+
+.arrow-img {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    justify-content: space-between;
+    position: relative;
+    right: 0;
+
+}
+
+
+p {
+    font-size: 1px;
+    width: 300px;
+    border-bottom: 1px solid grey;
+    margin: 5px 0;
+    color: #fff;
+}
+
+.show {
+    color: black;
+    transition: 0.4s;
+}
+
+.rotate-img {
+    rotate: 180deg;
+}
+
+@media (max-width: 769px){
+    body{
+        height: 100%;
+    }
+    .d-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    main{
+        background-image: none;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    .image-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -105px;
+        position: relative;
+right: -35px;
+
+    }
+    .women-img{
+        width: 350px;
+    }
+    .img{
+        width: 100px;
+        left: 0;
+        bottom: 30px;
+    }
+    .questions{
+        background-color: #fff;
+        padding: 20px 30px;
+    }
+    h2{
+        margin-top: 100px;
+    }
+    
+}
